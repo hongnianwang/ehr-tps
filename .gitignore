@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+*.RDataTmp
+Rplots.pdf
+
+# Virtual environments
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.localized
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Local model/runtime artifacts
+catboost_info/
+*.model
+*.pkl
+*.joblib
+*.rds
+*.log
+
+# Restricted or generated data
+data/**
+!data/
+!data/mimiciv/
+!data/mimiciv/README.md
+!data/eicu/
+!data/eicu/README.md
+
+# Generated outputs are ignored by default.
+results/**
+!results/
+
+# Never track patient-level or case-level generated files.
+results/**/*predictions*.csv
+results/**/*candidate*.csv
+results/**/*trajectory*.csv
+results/**/*selected_examples*.csv
+results/**/*corrected_samples*.csv
+results/**/*waterfall*.csv
+results/**/*manifest*.json
+
+# Figure files are regenerated locally and are not committed.
+results/**/*.png
+results/**/*.pdf
+results/**/*.svg
+results/**/*.tiff
+results/**/*.tif
+
+# S3M outputs are derived files.
+shapelets/**
+!shapelets/
